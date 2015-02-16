@@ -3,6 +3,7 @@
 
 <a href="/auth/github"><button>Login with GitHub</button></a>
 
-<div ng-repeat="key in friends">
-  {{key}}
+<div ng-repeat="friend in friends">
+  id: <a href="#/friend/{{friend.login}}">{{friend.login}}</a>,
+  profilepic: <img src="{{friend.avatar_url}}">
 </div>
